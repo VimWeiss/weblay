@@ -134,6 +134,7 @@ html{
 .container-reservation-offer {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .section-reservation{
     width: 50%;
@@ -178,24 +179,20 @@ input:focus::placeholder {
 /*Offer*/
 .container-offer{
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end;
     background-image: url(../img/22.svg);
     background-repeat: no-repeat;
-    border: none;
-    border-radius: 10px;
-    padding-top: 150px;
-    margin-left: 50px;
+    background-position: center;
     min-height: 600px;
 }
 .offer-description{
-    padding-left: 45px;
-   
+    padding-left: 45px;   
 }
 .numbers {
-    font-size: 66px;
+    font-size: 60px;
     font-weight: bold;
     color: #ffffff;
-    margin-top: 90px;    
+     
 }
 .price{
     color: #8e8a88;
@@ -338,6 +335,7 @@ input:focus::placeholder {
 }
 .contacts-block { 
     display: flex;
+    align-items: baseline;
     margin-bottom: 20px;
     border-bottom: 1px solid #cccccc;
     background-color: #ffffff;
