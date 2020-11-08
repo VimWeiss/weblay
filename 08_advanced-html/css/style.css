@@ -164,12 +164,10 @@ input:focus::placeholder {
     color: white;
     font-size: 16px;
     line-height: 1;
-    padding: 25px 30px;
     border-radius: 12px;
     border: none;
     font-weight: bold;
-    cursor: pointer;
-    display:inline-block;
+    padding: 25px 25px;
 }
 .free-reservation {
     margin-left: 30px;
@@ -178,21 +176,23 @@ input:focus::placeholder {
 }
 /*Offer*/
 .container-offer{
-    display: flex;
-    align-items: flex-end;
     background-image: url(../img/22.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    margin-left: 50px;
     min-height: 600px;
 }
 .offer-description{
-    padding-left: 45px;   
+    padding-left: 45px;
+    padding-right: 100px;
+    padding-top: 230px;
 }
 .numbers {
+    margin: 0;
+    padding: 0;
     font-size: 60px;
     font-weight: bold;
     color: #ffffff;
-     
+    
 }
 .price{
     color: #8e8a88;
