@@ -98,7 +98,12 @@ html{
     margin-left: 45px;
     font-weight: normal;
 }
-
+.section-heading2 {
+    font-size: 40px;
+    color: #333333;
+    margin-left: 90px;
+    font-weight: normal;
+}
 .personal{
     color: #cc9933;
     padding-right: 25px;
@@ -179,7 +184,7 @@ input:focus::placeholder {
     background-image: url(../img/22.svg);
     background-repeat: no-repeat;
     margin-left: 50px;
-    min-height: 600px;
+    min-height: 550px;
 }
 .offer-description{
     padding-left: 45px;
@@ -225,7 +230,7 @@ input:focus::placeholder {
 }
 /*Services*/
 .section-services-item{  
-    width: 45%;
+    width: 570px;
     background-color: #ffffff;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -250,7 +255,7 @@ input:focus::placeholder {
 /*Advantages*/
 .advantages-item{
     margin-top: 15px;
-    width: 250px;
+    width: 275px;
     background-color: #ffffff;
     background-size: contain;
     border-radius: 20px;
@@ -266,7 +271,7 @@ input:focus::placeholder {
 
 /*Accomodation*/
 .accommodation-item{
-    width: 30%;
+    width: 375px;
     margin-bottom: 25px;
     background-color: #ffffff;
     background-size: contain;
