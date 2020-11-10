@@ -300,13 +300,13 @@ input:focus::placeholder {
     color: #666666;
 }
 .accommodation-btn {
-    border: #cc9933;
-    border-style: solid;
+    border: 1px solid #cc9933;
     border-radius: 15px;
     display: inline-flex;
     color: #cc9933;
     padding: 15px 25px;
     font-size: 16px;
+    font-weight: 700;
     margin-top: 10px;
     margin-left: 45px;
     margin-bottom: 45px;
@@ -335,15 +335,15 @@ input:focus::placeholder {
     background-color: white;
     border-radius: 10px;
     width: 470px;
-    padding: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    padding: 40px;
 }
 .contacts-block { 
     display: flex;
     align-items: baseline;
-    margin-bottom: 20px;
     border-bottom: 1px solid #cccccc;
     background-color: #ffffff;
+    margin-top: 15px;
 }
 .contacts-title {
     width: 40%;
@@ -367,18 +367,24 @@ input:focus::placeholder {
 .route-btn {
     background-color: white;
     display: inline-block ;
-    border: #cc9933;
-    border-style: solid;
+    border: 1px solid #cc9933;
     border-radius: 10px;
     color: #cc9933;
     padding: 20px 20px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 45px;
+   
 }
 .container-write {
-    margin-top: 80px;
+    margin-top: 260px;
     padding-right: 180px;
+}
+.write-heading {
+    font-size: 40px;
+    color: #333333;
+    margin-left: 30px;
+    font-weight: normal;
 }
 .item-write{
     margin-bottom: 20px;
@@ -401,6 +407,7 @@ input:focus::placeholder {
     border-radius: 10px;
     padding-left: 20px;
     resize: none;
+    padding-top: 15px;
 }
 .textarea-write:focus::placeholder {
     color: transparent;
