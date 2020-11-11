@@ -133,6 +133,7 @@ html{
     border: none; 
     padding: 10px 10px 10px 25px;
     background: url(../img/search.png) no-repeat 50% 50%; 
+    cursor: pointer;
 }
 
 /*Reservation*/
@@ -173,6 +174,7 @@ input:focus::placeholder {
     border: none;
     font-weight: bold;
     padding: 25px 25px;
+    cursor: pointer;
 }
 .free-reservation {
     margin-left: 30px;
@@ -422,6 +424,7 @@ input:focus::placeholder {
     border: none;
     font-weight: bold; 
     width: 340px;
+    cursor: pointer;
 }
 
 /*Footer*/
