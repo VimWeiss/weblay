@@ -212,15 +212,15 @@ input:focus::placeholder {
 .container-offer{
     background-image: url(../img/22.svg);
     background-repeat: no-repeat;
-    margin-left: 50px;
-    min-height: 550px;
+    width: 550px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
-.offer-description{
-    padding-left: 45px;
-    padding-right: 100px;
-    padding-top: 230px;
-}
 .numbers {
     margin: 0;
     padding: 0;
@@ -233,15 +233,16 @@ input:focus::placeholder {
     color: #8e8a88;
     font-size: 35px;
 }
-.price:hover {
-    transform: scale(1.1);
-    transition-delay: 200ms;
-    transition-duration: 300ms;
-}
+
 .price-link {
     font-size: 22px;
     padding-left: 40px;
     color: #e0b35a;
+}
+.price-link:hover {
+    transform: scale(1.5);
+    transition-delay: 200ms;
+    transition-duration: 300ms;
 }
 .arrow {
     vertical-align: middle;
@@ -262,12 +263,10 @@ input:focus::placeholder {
     display: flex;
     flex-wrap: wrap;  
 }
-.flex:nth-child(n+1) {
-    margin-right: 25px;
-}
+
 /*Services*/
 .section-services-item {  
-    width: 45%;
+    width: 570px;
     background-color: var(--seccolor);
     border-radius: 20px;
     margin-bottom: 20px;
@@ -277,7 +276,7 @@ input:focus::placeholder {
     transition-delay: 200ms;
     transition-duration: 300ms;
 }
-.section-services-item:nth-child(n+1) {
+.section-services-item:nth-child(2n+1) {
     margin-right: 25px;
    
 }
@@ -301,9 +300,8 @@ input:focus::placeholder {
 /*Advantages*/
 .advantages-item{
     margin-top: 15px;
-    width: 260px;
+    width: 265px;
     background-color: var(--seccolor);
-    background-size: contain;
     border-radius: 20px;
     padding: 40px 40px 40px 40px;
 }
@@ -320,7 +318,7 @@ input:focus::placeholder {
 
 /*Accomodation*/
 .accommodation-item{
-    width: 350px;
+    width: 365px;
     margin-bottom: 25px;
     background-color: var(--seccolor);
     background-size: contain;
