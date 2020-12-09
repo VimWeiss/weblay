@@ -368,7 +368,10 @@ input:focus::placeholder {
     position: relative;
 }
 
-.accommodation-all-link {
+
+.accommodation-all-link::before  {
+    content: 'Посмотреть все варианты';
+    display: block;
     color: var(--seccolor);
     position: absolute;
     font-weight: bold;
@@ -376,6 +379,7 @@ input:focus::placeholder {
     margin-top: 380px;
     margin-left: 30px;
 }
+
 
 /*Contacts*/
 .container-contacts-write {
