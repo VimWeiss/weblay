@@ -143,7 +143,7 @@ html {
     border-style: none;
     min-height: 40px;
     padding: 5px 5px;
-    
+    margin-right: 20px;
 }
 .search-description {
     border: none; 
@@ -366,20 +366,23 @@ input:focus::placeholder {
     background-image: url(../img/41.png);
     background-repeat: round;
     position: relative;
-}
-
-
-.accommodation-all-link::before  {
-    content: 'Посмотреть все варианты';
-    display: block;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
     color: var(--seccolor);
-    position: absolute;
     font-weight: bold;
     font-size: 22px;
-    margin-top: 380px;
-    margin-left: 30px;
 }
-
+.accommodation-all-link  {
+    color: #ffffff;
+}
+.accommodation-all-link:hover  {
+    color: #ffffff;
+}
+.accommodation-all-link::before {
+    content: '';
+    position: absolute;
+  }
 
 /*Contacts*/
 .container-contacts-write {
