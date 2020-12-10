@@ -375,6 +375,10 @@ input:focus::placeholder {
 }
 .accommodation-all-link  {
     color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 .accommodation-all-link:hover  {
     color: #ffffff;
