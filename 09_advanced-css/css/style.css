@@ -109,6 +109,7 @@ html {
     padding-right: 10px;
 }
 
+
 .section-heading{
     font-size: 40px;
     color: #333333;
@@ -264,7 +265,7 @@ input:focus::placeholder {
     margin-bottom: 20px;
 }
 
-.section-services-item:nth-child(2n+1) {
+.section-services-item:not(:nth-child(2n)) {
     margin-right: 25px;
    
 }
@@ -297,10 +298,8 @@ input:focus::placeholder {
     padding: 40px 40px 40px 40px;
     margin-bottom: 25px;
 }
-.advantages-item:nth-child(-n+3) {
-    margin-right: 25px;
-}
-.advantages-item:nth-child(n+5):nth-child(-n+7) {
+
+.advantages-item:not(:nth-child(4n)) {
     margin-right: 25px;
 }
 .advantages-image{
@@ -320,13 +319,7 @@ input:focus::placeholder {
     border-radius: 20px;
     
 }
-.accommodation-item:nth-child(-n+2) {
-    margin-right: 25px;
-}
-.accommodation-item:nth-child(n+4):nth-child(-n+5) {
-    margin-right: 25px;
-}
-.accommodation-item:nth-child(n+7):nth-child(-n+8) {
+.accommodation-item:not(:nth-child(3n)) {
     margin-right: 25px;
 }
 .accommodation-description {
