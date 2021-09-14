@@ -248,10 +248,8 @@ input:focus::placeholder {
 
 /*Services*/
 .section-services-item {  
-    width: 570px;
     background-color: var(--seccolor);
     border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 .services-link {
