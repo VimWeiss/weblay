@@ -71,9 +71,7 @@ html {
 
 .container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    
+
 }
 /*Header*/
 .header {
@@ -302,14 +300,17 @@ input:focus::placeholder {
     margin-right: 25px;
 }
 .accommodation-description {
-        
-    padding-left: 45px;
-    padding-right: 35px;
+    margin-left: 45px; 
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 16px;
     
 }
+
+.star{
+    margin-left: 45px;  
+}
+
 .accomodation-hotel {
     margin-top: 5px;
     padding-left: 45px;
@@ -392,6 +393,7 @@ input:focus::placeholder {
 }
 .contacts-phones {
     color:  var(--color);
+    cursor: pointer;
 }
 .mail-contacts  {
     margin-left: 45px;
@@ -506,8 +508,10 @@ input:focus::placeholder {
 .footer-link2 {
     color: var(--color);
     margin-top: 40px;
+    cursor: pointer;
 }
 .footer-link3 {
     color: var(--color);
     margin-top: 10px;
+    cursor: pointer;
 }
