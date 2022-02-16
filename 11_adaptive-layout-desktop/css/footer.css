@@ -1,0 +1,390 @@
+.footer {
+	padding-top: 50px;
+
+	color: #CACACA;
+	background-color: #333;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+
+	padding-bottom: 44px;
+}
+
+.footer__footerAbout {
+	flex-basis: 30%;
+}
+
+.footerAbout__logo {
+	margin-bottom: 26px;
+
+	transition: filter .3s ease;
+}
+
+.footerAbout__logoMobile {
+	display: none;
+}
+
+.footer__footerMenu {
+	flex-basis: 30%;
+}
+
+.footerMenu__list {
+	margin-bottom: 100px;
+}
+
+.footerMenu__item:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.footerMenu__itemLink {
+
+	transition: color .3s ease;
+	letter-spacing: -.01em;
+
+	color: #cacaca;
+
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.footerMenu__itemLink:hover,
+.footerMenu__itemLink:focus {
+	color: #f90;
+}
+
+
+
+.footerMenu__itemLinkMobile {
+	display: none;
+}
+
+.footerAbout__socialList {
+	display: flex;
+}
+
+.footerAbout__socialListMobile {
+	display: none;
+}
+
+.footerAbout__socialItem {
+	width: 65px;
+	margin-right: 20px;
+}
+
+.footerAbout__socialFB,
+.footerAbout__socialVK,
+.footerAbout__socialINST {
+	display: block;
+
+	height: 65px;
+
+	transition: filter .3s ease;
+}
+
+.footerAbout__socialFB {
+	background: url('../img/fb.svg') no-repeat;
+}
+
+.footerAbout__socialVK {
+	background: url('../img/vk.svg') no-repeat;
+}
+
+.footerAbout__socialINST {
+	background: url('../img/inst.svg') no-repeat;
+}
+
+.footerAbout__socialFB:hover,
+.footerAbout__socialFB:focus,
+.footerAbout__socialVK:hover,
+.footerAbout__socialVK:focus,
+.footerAbout__socialINST:hover,
+.footerAbout__socialINST:focus {
+	filter: drop-shadow( 0 0 3px rgba(255, 153, 0, 0.6));
+}
+
+.footer__sendLetter {
+	flex-basis: 32.5%;
+
+	padding-top: 6px;
+}
+
+.sendLetter__title {
+	margin-bottom: 26px;
+
+	color: #cacaca;
+}
+
+.footer__footerForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.footerForm__input {
+	width: 100%;
+	height: 60px;
+	padding: 20px;
+
+	color: #cacaca;
+	background-color: #414141;
+
+	font-size: 18px;
+}
+
+.footerForm__input {
+	margin-bottom: 26px;
+}
+
+.footerForm__input:last-of-type {
+	margin-bottom: 30px;
+}
+
+.footerTextarea {
+	height: 150px;
+	padding: 20px;
+}
+
+.footerForm__input::placeholder {
+	padding-left: 10px;
+
+	color: #cacaca;
+
+	font-size: 16px;
+}
+
+.footerForm__submitBlock {
+	display: flex;
+
+	padding-left: 4px;
+}
+
+.footerForm__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-right: 22px;
+	padding: 21px 55px;
+
+	cursor: pointer;
+	transition: background-color .3s ease;
+	letter-spacing: -.05em;
+
+	color: white;
+	background-color: #f90;
+
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.footerForm__btn:hover,
+.footerForm__btn:focus {
+	background-color: rgba(255, 153, 0, 0.6);
+}
+
+.footerForm__btn:active {
+	background-color: #E1670E;
+}
+
+.footerForm input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+
+	opacity: 0;
+}
+
+.footerForm input[type=checkbox]+label {
+	display: inline-flex;
+	align-items: center;
+
+	cursor: pointer;
+	user-select: none;
+	transition: color .3s ease;
+	letter-spacing: .02em;
+}
+
+#gdpr:focus-visible+.footerForm__gdpr {
+	outline: 2px solid red;
+}
+
+.footerForm input[type=checkbox]+label:hover,
+.footerForm input[type=checkbox]+label:focus {
+	color: #f90;
+}
+
+.footerForm input[type=checkbox]+label::before {
+	width: 14px;
+	height: 14px;
+	margin-right: 2px;
+
+	content: '';
+
+	border: 1px solid #cacaca;
+	background-repeat: no-repeat;
+	background-position: 40% center;
+	background-size: 80% 80%;
+}
+
+.footerForm input[type=checkbox]:checked+label::before {
+	background-image: url("../img/gdpr.svg");
+}
+
+.footer__footerAbout {
+	display: flex;
+	justify-content: flex-end;
+
+	padding: 87px 0 0 0;
+}
+
+.footerAbout__describe {
+	width: 68%;
+
+	line-height: 2em;
+}
+
+
+
+
+@media (min-width:1200px) and (max-width:1399px) {
+
+}
+
+@media (max-width:1199px) {
+	.footer {
+		padding-top: 50px;
+	}
+	.footer__footerAbout {
+		display: none;
+	}
+	.footer__sendLetter {
+		flex-basis: 58.6%;
+	}
+	.sendLetter__title {
+    margin-bottom: 30px;
+	}
+	.footerForm__input::placeholder {
+    padding-left: 5px;
+	}
+	.footerForm__submitBlock {
+		padding-left: 0;
+	}
+	textarea.footerForm__input:last-of-type {
+    margin-bottom: 30px;
+	}
+	.footerForm__btn {
+		margin-right: 21px;
+		padding: 21px 41px;
+
+		white-space: nowrap;
+	}
+	.footerForm input[type=checkbox]+label::before {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width:991px) {
+	.footer {
+    padding-top: 40px;
+	}
+	.footer__container {
+    flex-direction: column-reverse;
+
+		padding-bottom: 45px;
+	}
+	.footerMenu__list {
+    display: none;
+	}
+	.footer__sendLetter {
+		margin-bottom: 48px;
+    padding-top: 18px;
+	}
+	.footerAbout__logo {
+    margin-bottom: 13px;
+	}
+	
+	.footer__footerForm {
+    max-width: 81%;
+	}
+	.footerForm__input::placeholder {
+    padding-left: 5px;
+	}
+	.footerForm__submitBlock {
+		padding-left: 0;
+	}
+
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (max-width:575px) {
+	.footer {
+    padding-top: 15px;
+	}
+	.footer__container {
+    padding-bottom: 32px;
+	}
+	.sendLetter__title {
+    font-size: 24px;
+    line-height: 29px;
+	}
+	.sendLetter__title {
+    margin-bottom: 20px;
+	}
+	.footerForm__input::placeholder {
+    padding-left: 0;
+
+		font-size: 14px;
+	}
+	.footer__footerForm {
+    max-width: 100%;
+	}
+	textarea.footerForm__input:last-of-type {
+    margin-bottom: 24px;
+	}
+	.footerForm__submitBlock {
+    flex-direction: column;
+	}
+	.footerForm__btn {
+    width: 62.5%;
+    margin: 0 auto;
+		margin-bottom: 20px;
+    padding: 13px 10px;
+
+    font-size: 13px;
+	}
+	.footerForm input[type=checkbox]+label {
+		margin: 0 auto;
+	}
+	.footer__sendLetter {
+    margin-bottom: 40px;
+	}
+	.footerAbout__logo {
+    display: block;
+
+    max-width: 131px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+	}
+	.footerAbout__socialList {
+		justify-content: center;
+
+    width: auto;
+		padding-top: 3px;
+		padding-left: 15px;
+	}
+	.footerAbout__socialItem {
+    width: 56px;
+    margin-right: 0;
+	}
+	.footerAbout__socialFB, 
+	.footerAbout__socialVK, 
+	.footerAbout__socialINST {
+    width: 40px;
+		height: 40px;
+
+    background-size: contain;
+	}
+}
