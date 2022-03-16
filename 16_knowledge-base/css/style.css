@@ -1,0 +1,326 @@
+html {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px;
+}
+
+/* Кастомные чекбоксы */
+
+.animals-checkbox {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  max-width: max-content ;
+  border-radius: 10px;
+  background-color: #fff;
+ }
+
+.animals-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.animals-checkbox-item {
+  margin-bottom: 20px;
+}
+
+.check-label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+}
+.check-input {
+  display: none;
+}
+
+.check-input + span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.check-input + span:hover {
+  border: 1px solid #CCB26E;
+}
+
+.check-input + span:before {
+  content: url('../img/Rectangle99.svg');
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.check-input:checked + span:before
+{
+  opacity: 1;
+}
+
+.check-input:checked + span {
+  border: 1px solid #CCB26E;
+}
+
+.check-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+/* Селекты */
+
+.choices {
+  max-width: 250px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.choices[data-type*=select-one]::after {
+  content: url(../img/R141.svg);
+  right: 15%;
+  top: 35%;
+  border: none;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  content: url(../img/R141G.svg);
+  right: 15%;
+  top: 50%;
+  border: none;
+}
+
+.choices__inner {
+  border: none;
+  background-color: #fff;
+}
+
+.is-open.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 7.5px;
+  border: 1px solid  #CCB26E;
+}
+
+.is-open .choices__inner {
+  border-radius: 6px 6px 0 0;
+}
+
+.choices__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+  background-color: #fff;
+}
+
+.choices__list--dropdown.is-active {
+  margin-top: 0;
+  padding-top: 10px;
+  border: 1px solid  #CCB26E;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+[data-id="5"] {
+  display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+  opacity: 0;
+}
+
+
+/* Яндекс карты */
+
+.yandex-map {
+  width: 600px;
+  height: 400px;
+}
+
+[class *="ground-pane"] {
+  filter: grayscale(1)
+}
+
+/* Тултип */
+
+.cart {
+  max-width: 375px;
+  padding: 20px 80px 20px 30px;
+  background-color: #fff;
+}
+
+.cart-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333333;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-image: url(../img/tooltip.svg);
+}
+
+.marker:hover,
+.marker:focus {
+  background-image: url(../img/tooltipg.svg);
+}
+
+.popup {
+  position: absolute;
+  max-width: 165px;
+  transform: translateX(-45%);
+  bottom: 25px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #5B46A9;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5B46A9 transparent transparent transparent;
+}
+
+.marker:hover + .popup,
+.marker:focus + .popup {
+  opacity: 1;
+}
+
+/* Скроллбар */
+
+.customscroll {
+  width: 400px;
+  height: 310px;
+  padding: 20px 30px 20px 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333333;
+  background-color: #fff;
+}
+
+.simplebar-scrollbar {
+  height: 70px !important;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 7px;
+  bottom: 7px;
+}
+
+.simplebar-scrollbar:before {
+  background:#CCB26E;
+  border-radius: 5px;
+}
+
+
+/* Формы */
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 410px;
+  padding: 40px 30px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+.form-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  width: 380px;
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+
+.form-btn {
+  padding: 17px 53px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #FF5C00;
+  border-radius: 10px;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  bottom: 60px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  color:  #FF5C00 !important;
+}
+
+.js-validate-error-field {
+  border: 1px solid #FF5C00 !important;
+}
+
