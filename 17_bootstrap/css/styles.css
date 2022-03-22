@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --blue: #3F2AFF;
+}
+
+body {
+  opacity: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.header {
+  background-color: var(--blue);
+  color: #FFF;
+}
+
+.header__row {
+  justify-content: space-between;
+  position: relative;
+}
+
+.burger-menu-button {
+  display: none;
+  align-self: center;
+  cursor: pointer;
+  height: 30px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  background: url('../img/mobile/burger-menu.svg') no-repeat center center;
+  background-size: 40px;
+  z-index: 999;
+}
+
+.logo {
+  padding: 0 15px;
+}
+
+.logo__img {
+  padding: 29px 0 26px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item:not(:last-of-type) {
+  margin-right: 56px;
+}
+
+.nav-list__link {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+/* ======== */
+
+.section-main-offer {
+  padding: 15px 0 12px;
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  color: #FFF;
+}
+
+.main-offer__content {
+  padding: 117px 15px;
+}
+
+.main-offer__heading {
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.main-offer__text {
+  margin-bottom: 62px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 24px 76px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: var(--blue);
+  border-radius: 20px;
+  color: #FFF;
+}
+
+.section__heading {
+  padding-left: 4px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 23px;
+}
+
+.main-offer {
+  justify-content: space-between;
+}
+
+.main-offer__decoration {
+  padding: 30px;
+  background: url('../img/main-offer__decoration.png') no-repeat center center;
+  background-size: contain;
+}
+
+.section:not(.section-main-offer) {
+  padding: 80px 15px 80px;
+}
+
+.section-advantages {
+  background: #FFF;
+}
+
+.section-advantages__heading {
+  max-width: 380px;
+  margin-bottom: 17px;
+  padding-left: 0;
+}
+
+.main-adv__decoration {
+  padding: 0 15px;
+  background: url('../img/main-adv__decoration.png') no-repeat center -18px;
+  background-size: 130%;
+}
+
+.main-adv__content {
+  padding: 0 15px;
+  margin-bottom: 23px;
+}
+
+.main-adv__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.sub-adv__item {
+  display: flex;
+  padding: 0 14px;
+}
+
+.sub-adv__decor {
+  min-height: 80px;
+  min-width: 80px;
+}
+
+.sub-adv__text {
+  display: flex;
+  align-items: center;
+  padding: 0 0px 0 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666;
+}
+
+.sub-adv__decor_1 {
+  background: url('../img/eye-circle.svg') no-repeat center center;
+}
+
+.sub-adv__decor_2 {
+  background: url('../img/fingers.svg') no-repeat center center;
+}
+
+.sub-adv__decor_3 {
+  background: url('../img/mouthpiece.svg') no-repeat center center;
+}
+
+.section.section-teachers {
+  padding: 75px 15px 73px;
+  color: #FFF;
+  background: rgba(33, 33, 51, 1);
+}
+
+.teacher {
+  padding: 0 15px;
+}
+
+.section-teachers__heading {
+  margin-bottom: 23px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.sub-heading-3 {
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.teacher__photo {
+  min-height: 180px;
+  margin-bottom: 31px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: black;
+}
+
+.teacher_petrov .teacher__photo {
+  background: url('../img/teacher-petrov.png') no-repeat center center;
+}
+
+.teacher_sergeev .teacher__photo {
+  background: url('../img/teacher-sergeev.png') no-repeat center center;
+}
+
+.teacher_andreev .teacher__photo {
+  background: url('../img/teacher-andreev.png') no-repeat center center;
+}
+
+.teacher_dmitriev .teacher__photo {
+  background: url('../img/teacher-dmitriev.png') no-repeat center;
+}
+
+.teacher__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+
+.section.section-courses {
+  padding: 75px 15px 80px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  position: relative;
+  padding: 0 15px;
+}
+
+.course:nth-last-of-type(n+3) {
+  margin-bottom: 30px;
+}
+
+.course__time {
+  position: absolute;
+  padding-left: 30px;
+  right: 18px;
+  top: 13px;
+  background: url('../img/course-time.svg') no-repeat left center;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.course__img {
+  min-height: 180px;
+  background-size: cover !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.course_4d .course__img {
+  background: url('../img/cinema-4d.jpg') no-repeat center center;
+}
+
+.course_blender .course__img {
+  background: url('../img/blender.jpg') no-repeat center center;
+}
+
+.course_3ds .course__img {
+  background: url('../img/3ds.jpg') no-repeat center center;
+}
+
+.course_ZBrush .course__img {
+  background: url('../img/ZBrush.jpg') no-repeat center center;
+}
+
+.course__content {
+  display: flex;
+  min-height: 300px;
+  height: 100%;
+  padding: 31px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #EDF0F9;
+}
+
+.course__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.course__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.course__btn {
+  align-self: flex-start;
+  margin-top: 28px;
+  padding: 20px 60px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.social-media, .sm-links, .sm-links__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  padding: 30px 0;
+  align-items: center;
+  background: #2E2B44;
+}
+
+.sm-links__item:not(:last-of-type) {
+  margin-right: 34px;
+}
+
+.sm-links__link {
+  display: inline-block;
+  background-color: black;
+  background-size: cover !important;
+}
+
+.sm-links__link_fb {
+  width: 18px;
+  height: 18px;
+  background: url('../img/sm-logos/fb.svg') no-repeat center center;
+}
+
+.sm-links__link_tw {
+  width: 20px;
+  height: 18px;
+  background: url('../img/sm-logos/tw.svg') no-repeat center center;
+}
+
+.sm-links__link_inst {
+  width: 20px;
+  height: 20px;
+  background: url('../img/sm-logos/inst.svg') no-repeat center center;
+}
+
+.sm-links__link_yt {
+  width: 20px;
+  height: 16px;
+  background: url('../img/sm-logos/yt.svg') no-repeat center center;
+}
+
+.reg {
+  padding-top: 3px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+}
+
+.reg-icon {
+  color: #3f2aff;
+}
